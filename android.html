@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Symply for Android — notify me</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    color: #1c1c1e;
+    background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f2f2f7; background: #000000; }
+    a { color: #5ac8d8; }
+    .card { background: #1c1c1e; }
+    input { background: #1c1c1e; color: #f2f2f7; border-color: #3a3a3c; }
+    footer { color: #8e8e93; }
+  }
+  header { text-align: center; margin-bottom: 32px; }
+  h1 { font-size: 2rem; margin: 8px 0 4px; }
+  .tagline { color: #8e8e93; margin: 0; }
+  .logo { font-size: 3rem; }
+  .card {
+    background: #f2f2f7;
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin: 16px 0;
+  }
+  h2 { font-size: 1.2rem; margin-top: 28px; }
+  form { display: flex; flex-direction: column; gap: 12px; margin-top: 8px; }
+  input[type="email"] {
+    padding: 14px 16px;
+    font-size: 1rem;
+    border: 1px solid #c7c7cc;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #1c1c1e;
+  }
+  button {
+    padding: 14px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    background: #30b0c7;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  button:hover { background: #2596aa; }
+  .fine { font-size: 0.85rem; color: #8e8e93; }
+  a { color: #0a84c1; }
+  footer {
+    margin-top: 56px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #8e8e93;
+  }
+  /* anti-spam honeypot — hidden from real users */
+  .hp { position: absolute; left: -5000px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🫁</div>
+  <h1>Symply for Android?</h1>
+  <p class="tagline">Asthma &amp; allergy tracking — coming to Android one day?</p>
+</header>
+
+<div class="card">
+  <p><strong>Honest answer: not yet.</strong> Symply is built natively for iPhone, so Android
+  isn't a quick port — it's a full rebuild. Before we take that on, we want to know how many
+  people would actually use it.</p>
+  <p>Leave your email and we'll message you <strong>once</strong> — only if and when Symply
+  comes to Android. No spam, no newsletter, nothing else.</p>
+</div>
+
+<h2>Notify me when Symply hits Android</h2>
+
+<form action="https://formspree.io/f/xnjyzrbv" method="POST">
+  <input type="email" name="email" placeholder="you@example.com" required>
+  <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <input type="hidden" name="platform" value="Android waitlist">
+  <input type="hidden" name="_subject" value="New Symply Android waitlist signup">
+  <button type="submit">Notify me</button>
+</form>
+<p class="fine">We store only your email, only to send that one launch message, and never share or sell it.</p>
+
+<footer>
+  <p>In the meantime, Symply is on the <a href="https://apps.apple.com/app/id6771794811">App Store</a> for iPhone.<br>
+  Questions? <a href="mailto:venetsia@icloud.com">venetsia@icloud.com</a></p>
+</footer>
+
+</body>
+</html>
